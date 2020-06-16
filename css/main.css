@@ -1,0 +1,353 @@
+/* HELPERS */
+
+/* Flex center */
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+
+/* 
+Incluir esto para que la imagen no exeda el div
+max-width: 100%; 
+*/
+body{
+    overflow-x: hidden;
+}
+ul {
+    padding: 0;
+}
+.main-header{
+    background: url(../img/icono-arquitectos-banner.png);
+    background-size: cover;
+    min-height: 500px;
+}
+
+
+.form-control-lg .btn {
+    border-radius: 0;
+}
+.team{
+    background: rgba(48, 51, 107, .8);
+}
+.brd{
+    border: 1px solid red;
+}
+.main-logo{
+    width: 300px;
+    height: 34px;
+
+}
+.card{
+    border: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700 ;
+}
+h5{
+    font-size: 15px;
+    font-weight: 300;
+    color: #ED9214;
+}
+p{
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.arquitecto-image-bg{
+    background: url(../img/arquitecto-image-bg.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.verde-image-bg{
+    background: url(../img/verde-image-bg.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.anticipo-image-bg{
+    background: url(../img/anticipo-bg.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.redes-image-bg-2{
+    background: url(../img/redes-bg.png) no-repeat center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: unset;
+    display: inline-flex;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.padding-gen {
+    padding: 3rem
+}
+
+
+.bg-arquitectos {
+    background-color: #ED9214;
+}
+
+@media (max-width: 768px){
+    .arquitecto-image-bg,.verde-image-bg{
+        min-height: 250px;
+    }
+}
+
+
+.pac-info-izquierda{
+    /* margin-left: 50px; */
+}
+
+.pac-info-derecha{
+    margin-right: 50px;
+}
+
+@media (max-width: 983px){
+    .pac-info-derecha{
+        margin-right: 0px;
+    }
+}
+
+
+/* ------------------------ */
+/* BOTONES .btn-primary:active */
+/* ------------------------ */
+
+.btn-primary {
+    background-color:#ED9214;
+    border-color: #ED9214;
+    border: 0
+}
+.btn-primary:hover {
+    background-color:#ffffff;
+    color:#545b62;
+    border-color: #ffffff;
+}
+
+.btn-primary:focus {
+    background-color:#DC8000;
+    color:#545b62;
+    border-color: #B46800 !important;
+    box-shadow: 0 0 0 0.2rem rgba(232, 192, 137, 0.26) !important;
+}
+
+.btn-primary:active {
+    background-color:#ED9214 !important;
+    border-color: #ED9214;
+    border: 0;
+}
+
+.btn-warning {
+    border-radius: 50px;
+    background-color:#ffffff;
+    border-color: #ffffff;
+    color:#ED9214;
+}
+
+.btn-warning:hover {
+    background-color:#6E7071;
+    color:#ffffff;
+    border-color: #6E7071;
+}
+
+.btn-warning:focus {
+    background-color:#ffffff;
+    color:#ED9214;
+    border-color:#ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(232, 192, 137, 0.26) !important;
+}
+
+.btn-warning:active {
+    background-color:#ffffff !important;
+    border-color:#ffffff;
+}
+
+
+.btn-lg{ 
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------ */
+/* NAVBAR */
+/* ------------------------ */
+
+.navbar {
+    background-color:#f0f8ff00;
+    opacity: .9;
+    margin-bottom: 20px
+}
+
+/* Items del nav */
+.navbar .navbar-nav .nav-item {
+
+}
+
+/* Items del nav en hover */
+.navbar .navbar-nav .nav-item a:hover {
+    /* TODO */
+    color: #ccc
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+}
+
+/* Boton del nav en celular */
+.navbar .mobile-menu-icon {
+    color: #fff
+}
+
+.navbar .mobile-menu-icon i {
+    color: #fff
+}
+
+
+/* ------------------------ */
+/* HOME ELEMENTS */
+/* ------------------------ */
+
+.home-intro-text {
+    height: 400px;
+
+    /* Flex center */
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.home-intro-text .content {
+    max-width: 500px;
+    color: #fff
+}
+
+.social-icons li a {
+    padding: 7px !important;
+}
+
+@media (max-width: 768px){
+    .social-icons li a{
+        padding: 4px !important;
+    }
+}
+
+.social-icons li a img {
+    transition: all cubic-bezier(0.75, 0.35, 0, 1.04) 0.5s;
+
+}
+
+.social-icons li a img:hover {
+    filter: invert();
+}
+
+
+
+.inline-icon-and-text .item {
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.inline-icon-and-text .item-colum{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .inline-icon-and-text .item-colum{
+        justify-content: left;
+    }
+}
+
+
+.inline-icon-and-text .img-icon {
+    /*  */
+}
+
+.inline-icon-and-text .title {
+    opacity: .5;
+    font-weight: 600;
+    color: #fff
+}
+
+.inline-icon-and-text .text {
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.pre-footer {
+    padding: 1.5rem 3rem
+}
+
+.orange-bg {
+    background-color: #F0A743;
+}
+
+.green-bg {
+    background-color: #1E8853;
+}
+
+.grey-bg {
+    color: #6E7071;
+}
+
+.form-control:hover{
+    border-color: #ED9214;
+    box-shadow: 0 0 0 0.2rem rgba(240, 167, 67, 0.38);
+}
