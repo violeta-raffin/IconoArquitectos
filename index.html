@@ -7,25 +7,25 @@
 	<title>Icono Arquitectos</title>
 	<!--BOOTSTRAP CSS-->
 	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/fontawesome.min.css">
 	<!-- CUSTOM CSS-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
+	
 	<!--HEADER-->
 	<header class="main-header">
 			<!-- MENU-->
-			<nav class="navbar navbar-expand-lg padding-gen">
+			<nav class="navbar navbar-expand-lg navbar-dark padding-gen">
 				<div class="container-fluid p-0">
 					<a class="navbar-brand main-logo" href="/">
 						<img src="img/logo-icono-arquitectos.png" alt="logo-icono-arquitectos">
 					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="mobile-menu-icon">O</span>
+					<button class="NavbarToggler navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#NavbarMobile" aria-controls="NavbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="collapse navbar-collapse" id="NavbarMobile">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item active">
 								<a class="nav-link" href="#">Icono Arquitectos<span class="sr-only">(current)</span></a>
@@ -282,9 +282,34 @@
 		<!-- TODO Copyright -->
 	</footer>
 	<!-- JQuery -->
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<!-- Bootstrap 4 -->
 	<script src="vendor/jquery/jquery.js"></script>
+	<!-- Bootstrap 4 -->
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+
+	<script>
+
+		// Si se detecta click en .NavbarToggler
+		$('.NavbarToggler').on('click', function(){
+			
+			// Si la clase .NavbarToggler tiene la clase .collapsed
+			if ($(this).hasClass("collapsed")) {
+
+				// agregar clase .menu-opened
+				$('.navbar').addClass("menu-opened");
+				// Remover clase .menu-closed
+				$('.navbar').removeClass("menu-closed");
+
+			} else {
+
+				// Sino agregar clase .menu-closed
+				$('.navbar').addClass("menu-closed");
+				// Remover clase .menu-opened			
+				$('.navbar').removeClass("menu-opened");
+			}
+
+		});
+
+	</script>
 </body>
 
 </html>

@@ -41,11 +41,8 @@ ul {
 .brd{
     border: 1px solid red;
 }
-.main-logo{
-    width: 300px;
-    height: 34px;
 
-}
+
 .card{
     border: 0;
 }
@@ -118,6 +115,12 @@ li a {
 
 .padding-gen {
     padding: 3rem
+}
+
+@media (max-width: 465px) {
+    .padding-gen {
+        padding: 1.5rem
+    }
 }
 
 
@@ -212,15 +215,33 @@ li a {
 /* NAVBAR */
 /* ------------------------ */
 
+.main-logo {
+    width: 300px;
+    height: 34px;
+}
+
+@media (max-width: 991px) {
+    .main-logo {
+        max-width: 250px;
+    }
+}
+
+
+
+
 .navbar {
     background-color:#f0f8ff00;
     opacity: .9;
     margin-bottom: 20px
 }
 
-/* Items del nav */
-.navbar .navbar-nav .nav-item {
+.navbar .navbar-collapse {
+    margin-top: 70px
+}
 
+/* Items del nav */
+.navbar .navbar-toggler {
+    border: 0
 }
 
 /* Items del nav en hover */
@@ -242,6 +263,15 @@ li a {
     color: #fff
 }
 
+
+.menu-opened {
+    background-color: #B46800;
+    transition: all ease 0.2s;
+}
+
+.menu-closed {
+    background-color: transparent;
+}
 
 /* ------------------------ */
 /* HOME ELEMENTS */
