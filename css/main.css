@@ -135,8 +135,8 @@ li a {
 }
 
 
-.pac-info-izquierda{
-    /* margin-left: 50px; */
+.pac-info-izquierda .h5{
+    white-space: nowrap;
 }
 
 .pac-info-derecha{
@@ -265,7 +265,7 @@ li a {
 
 
 .menu-opened {
-    background-color: #B46800;
+    background-color: #f0a84388;
     transition: all ease 0.2s;
 }
 
