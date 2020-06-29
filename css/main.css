@@ -226,9 +226,11 @@ li a {
     }
 }
 
+.navbar-collapse {
+    background-color: #269aff;
+}
 
-
-
+/*
 .navbar {
     background-color:#f0f8ff00;
     opacity: .9;
@@ -239,14 +241,13 @@ li a {
     margin-top: 70px
 }
 
-/* Items del nav */
+Items del nav
 .navbar .navbar-toggler {
     border: 0
 }
 
-/* Items del nav en hover */
+Items del nav en hover
 .navbar .navbar-nav .nav-item a:hover {
-    /* TODO */
     color: #ccc
 }
 
@@ -254,7 +255,7 @@ li a {
     max-width: 100%;
 }
 
-/* Boton del nav en celular */
+Boton del nav en celular
 .navbar .mobile-menu-icon {
     color: #fff
 }
@@ -272,7 +273,7 @@ li a {
 .menu-closed {
     background-color: transparent;
 }
-
+*/
 /* ------------------------ */
 /* HOME ELEMENTS */
 /* ------------------------ */

@@ -241,7 +241,11 @@
 			}
 		}
 
-
+		@media (max-width: 400px) {
+			.main-logo {
+				max-width: 200px;
+			}
+		}
 
 
 		.navbar {
@@ -269,6 +273,12 @@
 
 		.navbar .navbar-brand img {
 			max-width: 100%;
+		}
+
+		@media (max-width: 400px){
+			.navbar-bran{
+				border: 1px solid red;
+			}
 		}
 
 		/* Boton del nav en celular */
@@ -332,7 +342,7 @@
 		}
 
 		.social-icons li a img:hover {
-			filter: invert();
+			filter: opacity(0.3);
 		}
 
 
@@ -376,13 +386,18 @@
 		.pre-footer {
 			padding: 1.5rem 3rem
 		}
+		@media (max-width: 400px){
+			.pre-footer{
+				padding: 30px 0px;
+			}
+		}
 
 		.orange-bg {
 			background-color: #F0A743;
 		}
 
 		.green-bg {
-			background-color: #1E8853;
+			background-color: #1fa082;
 		}
 
 		.grey-bg {
@@ -401,7 +416,7 @@
 	<!--HEADER-->
 	<header class="main-header">
 		<!-- MENU-->
-		<nav class="navbar navbar-expand-lg navbar-dark padding-nav">
+		<nav class="navbar navbar-expand-lg navbar-dark padding-gen">
 			<div class="container-fluid p-0">
 				<a class="navbar-brand main-logo" href="/">
 					<img src="img/logo-icono-arquitectos.png" alt="logo-icono-arquitectos">
@@ -564,6 +579,7 @@
 					</div>
 					<ul class="text-center social-icons">
 						<li><a href="https://www.instagram.com/iconoarquitectos/"><img src="img/instagram-logo.svg"></a></li>
+						<li><a href="https://www.instagram.com/icono.verde/"><img src="img/instagram-verde-logo.svg"></a></li>
 						<li><a href="https://www.flickr.com/photos/iconoarquitectos/albums"><img src="img/flickr-logo.svg"></a></li>
 						<li><a href="https://www.youtube.com/channel/UCKPslliHJODa_kwa2gir1Dg/feed"><img src="img/youtube-logo.svg"></a></li>
 						<li><a href="https://www.facebook.com/iconoarquitectos"><img src="img/facebook-logo.svg"></a></li>

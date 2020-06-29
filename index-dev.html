@@ -238,6 +238,12 @@
 			}
 		}
 
+		@media (max-width: 400px) {
+			.main-logo {
+				max-width: 200px;
+			}
+		}
+
 
 
 
@@ -255,6 +261,9 @@
 		.navbar .navbar-toggler {
 			border: 0
 		}
+		.navbar-toggler {
+			padding: 0;
+		}
 
 		/* Items del nav en hover */
 		.navbar .navbar-nav .nav-item a:hover {
@@ -264,6 +273,12 @@
 
 		.navbar .navbar-brand img {
 			max-width: 100%;
+		}
+	
+		@media (max-width: 400px){
+			.navbar-bran{
+				border: 1px solid red;
+			}
 		}
 
 		/* Boton del nav en celular */
@@ -323,18 +338,17 @@
 
 		.social-icons li a img {
 			transition: all cubic-bezier(0.75, 0.35, 0, 1.04) 0.5s;
-
 		}
 
 		.social-icons li a img:hover {
-			filter: invert();
+			filter: opacity(0.3);
 		}
 
 
 
 		.inline-icon-and-text .item {
 			padding: 5px;
-			font-size: 0.9rem;
+			font-size: 16px;
 		}
 
 		.inline-icon-and-text .item-colum{
@@ -376,13 +390,18 @@
 		.pre-footer {
 			padding: 1.5rem 3rem
 		}
+		@media (max-width: 400px){
+			.pre-footer{
+				padding: 30px 0px;
+			}
+		}
 
 		.orange-bg {
 			background-color: #F0A743;
 		}
 
 		.green-bg {
-			background-color: #1E8853;
+			background-color: #1fa082;
 		}
 
 		.grey-bg {
@@ -397,7 +416,6 @@
 </head>
 
 <body>
-
 	<!--HEADER-->
 	<header class="main-header">
 		<!-- MENU-->
@@ -414,19 +432,18 @@
 				<div class="collapse navbar-collapse" id="NavbarMobile">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Icono Arquitectos<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="http://iconoarquitectos.com.ar/">Icono Arquitectos<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Icono Verde</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
+							<a class="nav-link" href="#Contact">Contacto</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-
 		<!-- Seccion encabezado-->
 		<section class="container-fluid home-intro-text padding-gen">
 			<div class="content">
@@ -437,6 +454,7 @@
 			</div>
 		</section>
 	</header>
+
 
 	<!--ROW ICONO ARQUITECTOS-->
 	<section>
@@ -563,11 +581,12 @@
 						<h4>Seguinos en redes sociales</h4>
 					</div>
 					<ul class="text-center social-icons">
-						<li><a href="#home"><img src="img/instagram-logo.svg"></a></li>
-						<li><a href="#home"><img src="img/flickr-logo.svg"></a></li>
-						<li><a href="#home"><img src="img/youtube-logo.svg"></a></li>
-						<li><a href="#home"><img src="img/facebook-logo.svg"></a></li>
-						<li><a href="#home"><img src="img/twitter-logo.svg"></a></li>
+						<li><a href="https://www.instagram.com/iconoarquitectos/"><img src="img/instagram-logo.svg"></a></li>
+						<li><a href="https://www.instagram.com/icono.verde/"><img src="img/instagram-verde-logo.svg"></a></li>
+						<li><a href="https://www.flickr.com/photos/iconoarquitectos/albums"><img src="img/flickr-logo.svg"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCKPslliHJODa_kwa2gir1Dg/feed"><img src="img/youtube-logo.svg"></a></li>
+						<li><a href="https://www.facebook.com/iconoarquitectos"><img src="img/facebook-logo.svg"></a></li>
+						<li><a href="https://twitter.com/#!/icono_arq"><img src="img/twitter-logo.svg"></a></li>
 					</ul>
 				</div>
 			</div>
